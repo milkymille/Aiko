@@ -1,10 +1,52 @@
-@charset "UFT=8";
+@charset "utf=8";
+
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
 
 
 
 
 body { 
-    max-width: 960px;
     background-color: #eeeeee;
  
 }
@@ -14,46 +56,86 @@ h1 {
     font-weight: bold;
     text-align: center;
     color:darkgreen;
+    margin: 30px;
 }
 
-img{
-    vertical-align: bottom;
-    border: none;
-}
 
+
+
+.contents{
+    max-width: 960px;
+    margin:0 auto;
+    
+}
 
 
 .wrap{
     display: flex;
     justify-content: space-between;
- 
+
 }
 
+
 .card-list{
-    margin: 10px;
     background-color: white;
+    width: 30%;
+}
+
+.photo img{
+    margin-bottom: 10px;
+
 }
 
 
 h2{
-    margin: 0;
+    margin-left: 8px;
+    border-left: solid  darkgreen;
+    border-width: 8px;
+    padding: 5px;
+    padding-left:4px;
     color:darkgreen;
     font-size: 20px;
     font-weight: bold;
-    border-left: 20px solid darkgreen;
+    
  }
 
  
  h3{
-    margin: 0;
     font-size: 15px;
     font-weight: lighter;
+    line-height:150%;
+    padding: 8px;
+
+
  }
 
 
- @media screen and (max-width: 400px){
+ @media screen and (max-width: 400px)
+ {
 
-    img{width: 100%;}
-    .wrap{display: block}
-    .wrap2{margin-bottom:20px;}
- }
+    .photo img{
+        width: 100%;
+    
+    }
+
+
+    .wrap{
+        margin: auto;
+        margin: 10px;
+        display: block 
+}
+
+   .card-list{
+    width: 100%;
+    margin-bottom: 20px;
+
+
+
+}
+
+   }
+          
+
+    
+
+ 
