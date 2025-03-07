@@ -1,0 +1,364 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+
+
+body{
+    max-width: 1000px;
+    background-color: #e8d9bf;
+}
+
+
+
+
+/* ヘッダー */
+
+.header{
+    position: relative;
+}
+
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 2.51%;
+    padding-right: 6.53%;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    width:226.7px;
+}
+
+.pc-nav ul {
+    display: flex;
+    
+}
+.pc-nav ul li{
+    margin-right: 54px;
+    text-align: center;
+    width: 105px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.pc-nav ul li:last-child {
+    margin-right: 0;
+}
+
+
+.slider img {
+    width:100%
+}
+
+
+
+/* セクション１ */
+
+.section{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.word{
+    margin-top: 105px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.word2{
+   
+    margin-top: 47px;
+    text-align: center;
+    font-size: 82px;
+    line-height: 107.9%;
+}
+
+.word3{
+   
+    margin-top: 20px;
+    text-align: center;
+    font-size: 23px;
+    white-space: pre;
+    line-height: 165.2%;
+}
+
+/* アバウトアス */
+.about_us{
+    display: flex;
+    margin-top: 99px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.about_us_photo {
+margin-left: 16%;
+    margin-bottom:108px;
+}
+
+.about_us_photo img{
+    width: 500px;
+   border-bottom-right-radius:82px ;
+
+}
+
+
+.about_us_word{
+    margin-left:  80px;
+}
+
+.about_us_word img{
+    width:272px;
+}
+
+
+.about_us_right{
+    display: block;
+}
+
+.word4{
+    font-size: 44px;
+    margin-top: 58px;
+    margin-left:  80px;
+    line-height: 138.6%;
+}
+
+.word5{
+    font-size: 16px;
+    margin-top: 36px;
+    margin-left:  80px;
+    width:411px;
+    line-height: 162.5%;
+}
+
+/* メニュー */
+.menu{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu_word{ 
+    text-align: center;
+    }
+
+.menu_word img{
+    width: 151px;
+}
+
+
+.menu_photo ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu_photo{
+    margin-top: 49px;
+
+
+}
+.menu_photo img{
+    width:300px;
+    border-top-right-radius:82px ;
+}
+
+.menu_name{
+    font-size: 38px;
+    color:  #d30202;
+    margin-top: -9px;
+    margin-left: 14px;
+
+}
+
+.menu_name_info{
+    font-size: 17px;
+    width:300px;
+    margin-top: 24px;
+    line-height: 150%;
+}
+
+/* ギャラリー */
+
+.gallery{max-width:1000px}
+.gallery_word{ 
+    text-align: center;
+    margin-top: 100px;
+    }
+.gallery_word img{
+    width:245px;
+}
+
+
+.gallery_photo{ 
+    margin-top: 26px;
+    }
+
+.gallery_photo img{
+    width:384px;
+}
+
+.gallery_photo ul{
+
+    display: flex;
+}
+
+/* イベント */
+
+.event{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.event_word{
+    text-align: center;
+    margin-top: 71px;
+    margin-bottom: 40px;
+}
+
+.event_word img{
+width:174px;
+}
+
+
+.event_box{
+    padding-left:16%;
+    padding-top:38px;
+    font-size: 23px;
+    background: #fff;
+    border:  3.6843px solid #4f260b;
+}
+
+dt{
+    float:left;
+}
+
+dd{
+    margin-left: 158px;
+    text-decoration: underline;
+    margin-bottom: 24px;}
+
+
+
+/* アクセス */
+.access_word{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 47px;
+
+}
+
+.access_word img{
+    width:214px;
+    
+}
+
+
+/* クロージング */
+
+
+.end{
+    background-color:#fff ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.closing_word img{
+    margin-top: 50px;
+    margin-left: 24%;
+    width:227px;
+
+}
+
+.closing{
+    display: flex;
+}
+
+.closing_info{
+    margin-top: 50px;
+    margin-left:15% ;
+    font-size: 20px;
+    line-height:195%;
+}
+
+.copyright{
+    margin-top: 82px;
+    padding-bottom: 80px;
+    font-size: 16px;
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bottom img{
+    width: 125px;
+}
+
+.bottom{   
+    position: absolute;
+    border-bottom:30%;
+    right:16%;
+}
