@@ -52,7 +52,7 @@ img {
 
 
 body{
-    max-width: 1000px;
+
     background-color: #e8d9bf;
 }
 
@@ -63,6 +63,8 @@ body{
 
 .header{
     position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 
@@ -116,6 +118,8 @@ body{
 .section{
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .word{
@@ -142,28 +146,38 @@ body{
 }
 
 /* アバウトアス */
+
+
 .about_us{
-    display: flex;
+
     margin-top: 99px;
+    max-width: 1000px;
+    margin:0 auto ;
     padding-left: 10px;
     padding-right: 10px;
 }
 
+.about_us_wrap{
+    padding-left: 24px;
+    display: flex;
+}
 
 .about_us_photo {
-margin-left: 16%;
     margin-bottom:108px;
+
+
 }
 
 .about_us_photo img{
-    width: 500px;
-   border-bottom-right-radius:82px ;
+
+   border-radius:0 0 82px 0 ;
 
 }
 
 
 .about_us_word{
     margin-left:  80px;
+    margin-top: 36px;
 }
 
 .about_us_word img{
@@ -172,7 +186,9 @@ margin-left: 16%;
 
 
 .about_us_right{
+    width: 50%;
     display: block;
+
 }
 
 .word4{
@@ -186,40 +202,51 @@ margin-left: 16%;
     font-size: 16px;
     margin-top: 36px;
     margin-left:  80px;
-    width:411px;
     line-height: 162.5%;
 }
 
 /* メニュー */
+
 .menu{
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 106px;
+
+  
 }
 
 .menu_word{ 
     text-align: center;
+
     }
+
+.menu_photo_wrap{
+
+    display: flex;
+    justify-content: space-between;
+}
 
 .menu_word img{
     width: 151px;
 }
 
-
-.menu_photo ul{
-    display: flex;
-    justify-content: space-between;
+.menu_photo_list{
+    width: 30%;
+    justify-content:space-between;
 }
-
 
 
 .menu_photo{
     margin-top: 49px;
-
-
+ 
 }
+
+
 .menu_photo img{
-    width:300px;
-    border-top-right-radius:82px ;
+    border-radius:0 82px 0 0 ;
+
 }
 
 .menu_name{
@@ -239,7 +266,11 @@ margin-left: 16%;
 
 /* ギャラリー */
 
-.gallery{max-width:1000px}
+.gallery{
+    max-width: 1000px;
+    margin: 0 auto;}
+
+
 .gallery_word{ 
     text-align: center;
     margin-top: 100px;
@@ -267,6 +298,8 @@ margin-left: 16%;
 .event{
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 
@@ -277,7 +310,7 @@ margin-left: 16%;
 }
 
 .event_word img{
-width:174px;
+    width:174px;
 }
 
 
@@ -301,10 +334,16 @@ dd{
 
 
 /* アクセス */
+
+.access{
+    max-width: 1000px;
+    margin: 0 auto;
+}
 .access_word{
     text-align: center;
     margin-top: 80px;
     margin-bottom: 47px;
+    
 
 }
 
@@ -321,8 +360,18 @@ dd{
     background-color:#fff ;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+ 
 }
 
+.closing{
+    display: flex;
+}
+
+.closing_left{
+    width:30%
+}
 
 .closing_word img{
     margin-top: 50px;
@@ -331,16 +380,36 @@ dd{
 
 }
 
-.closing{
-    display: flex;
-}
 
+.closing_center{
+    width:50%
+}
 .closing_info{
     margin-top: 50px;
-    margin-left:15% ;
+    margin-left:6.5% ;
     font-size: 20px;
     line-height:195%;
 }
+
+
+.closing_right{
+    width:20%;
+    margin-top: 38px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bottom{
+    margin-right: 43%;
+}
+
+.bottom img{
+    width: 125px;
+}
+
+
 
 .copyright{
     margin-top: 82px;
@@ -349,16 +418,4 @@ dd{
     text-align: center;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
-.bottom img{
-    width: 125px;
-}
-
-.bottom{   
-    position: absolute;
-    border-bottom:30%;
-    right:16%;
-}
