@@ -402,14 +402,14 @@ html{
 }
 
 .bottom{
-    margin-right: 43%;
+    position: fixed;
+    bottom:20px;
+    right:20px;
 }
 
 .bottom img{
     width: 125px;
 }
-
-
 
 .copyright{
     margin-top: 82px;
